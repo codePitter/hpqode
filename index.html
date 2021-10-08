@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -27,16 +30,16 @@
                 <div class="frontside">
                     <h2 class="linked" onclick="flip('card1')">About me</h2>
                 </div>
-                <div class="backside" onclick="videoStatus('aboutMeVideo', 'btn1')">
-                    <video class="videoprops" autoplay muted loop id="aboutMeVideo">
+                <div class="backside">
+                    <video class="videoprops" autoplay muted loop id="aboutMeVideo" onclick="videoStatus('aboutMeVideo', 'btn1')">
                         <source src="/assets/video/My Video7.mp4" type="video/mp4">
                     </video>
                     <div class="card-content">
                         <p>Mi nombre es Pedro. Soy Desarrollador web Full Stack en constante capacitación en difernetes lenguajes de programación.</p><br>
-                        <p><a href="#"> Click aquí</a> para descargar mi CV</p>
+                        <p><a href="/assets/files/CvHPQuiroga2021v2.pdf"> Click aquí</a> para descargar mi CV</p>
                     </div>
                     <div>
-                        <button id="btn1" onclick="videoStatus('aboutMeVideo', 'btn1')">Pausa <i class="fa fa-pause"></i></button>
+                        <button id="btn1">Pausa <i class="fa fa-pause"></i></button>
                     </div>
                     <div>
                         <button class="flipButton" onclick="flip('card1')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
@@ -48,11 +51,89 @@
                     <h2 class="linked" onclick="flip('card2')">Skills</h2>
                 </div>
                 <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="skillsVideo">
-                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    <video class="videoprops" autoplay muted loop id="skillsVideo" onclick="videoStatus('skillsVideo', 'btn2')">
+                        <source src="/assets/video/skills2.mp4" type="video/mp4">
                     </video>
                     <div class="card-content">
-                        <a href="#">Click</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="slideTitle">
+                                    <h3>Programación</h3>
+                                    <div class="numbertext">1 / 3</div>    
+                                </div>
+                                <span>HTML</span>
+                                <div class="container">
+                                    <div class="skills html">90%</div>
+                                </div>
+                                <span>CSS</span>
+                                <div class="container">
+                                    <div class="skills css">80%</div>
+                                </div>
+                                <span>JavaScript</span>
+                                <div class="container">
+                                    <div class="skills js">55%</div>
+                                </div>
+                                <span>NodeJS</span>
+                                <div class="container">
+                                    <div class="skills php">40%</div>
+                                </div>
+                            </div>
+                            <!------------------------------------------->  
+                            <div class="mySlides fade">
+                                <div class="slideTitle">
+                                    <h3>Diseño</h3>
+                                    <div class="numbertext">2 / 3</div>    
+                                </div>
+                                <span>Bootstrap 5</span>
+                                <div class="container">
+                                    <div class="skills bootstrap">75%</div>
+                                </div>
+                                <span>Photoshop</span>
+                                <div class="container">
+                                    <div class="skills photoshop">90%</div>
+                                </div>
+                                <span>Corel Draw</span>
+                                <div class="container">
+                                    <div class="skills corelDraw">50%</div>
+                                </div>
+                                <span>Filmora</span>
+                                <div class="container">
+                                    <div class="skills wonderShareFilmora">80%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="slideTitle">
+                                    <h3>Administración</h3>
+                                    <div class="numbertext">3 / 3</div>    
+                                </div>
+                                <span>Excel</span>
+                                <div class="container">
+                                    <div class="skills excel">100%</div>
+                                </div>
+                                <span>Word</span>
+                                <div class="container">
+                                    <div class="skills word">95%</div>
+                                </div>
+                                <span>Power Point</span>
+                                <div class="container">
+                                    <div class="skills powerPoint">95%</div>
+                                </div>
+                                <span>Citrix Workspace</span>
+                                <div class="container">
+                                    <div class="skills citrix">75%</div>
+                                </div>
+                            </div>
+                            <!------------------------------------------->
+                        </div>                        
+                        <!------------------------------------------->
+                        
+                    </div>
+                    <div>
+                        <button id="btn2">Pausa <i class="fa fa-pause"></i></button>
                     </div>
                     <div>
                         <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
