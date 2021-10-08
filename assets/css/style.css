@@ -122,8 +122,8 @@ video{
     color: #f7df1e;
 }
 
-.slideTitle{
-
+#aboutMeDescription{
+    min-width: 250px;
 }
 
 h3{
