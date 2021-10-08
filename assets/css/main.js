@@ -1,1 +1,0 @@
-const yellow = require('javascript-yellow')

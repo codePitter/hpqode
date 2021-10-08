@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <header>
         <div class="nav-tab">
             <div class="logo">
-                <h1>Pitter<strong>CODE</strong></h1> 
+                <h1>Code<strong>Pitter</strong></h1> 
             </div>
             <div class="socialMedia">
                 <h2>socialmedia</h2>
@@ -22,52 +23,104 @@
         </div>
     </header>
     <div class="row">
-            <div class="card1">
+            <div class="card1" id="card1">
                 <div class="frontside">
-                    <h2>About me</h2>
+                    <h2 class="linked" onclick="flip('card1')">About me</h2>
                 </div>
-                <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                <div class="backside" onclick="videoStatus('aboutMeVideo', 'btn1')">
+                    <video class="videoprops" autoplay muted loop id="aboutMeVideo">
+                        <source src="/assets/video/My Video7.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <p>Mi nombre es Pedro. Soy Desarrollador web Full Stack en constante capacitación en difernetes lenguajes de programación.</p><br>
+                        <p><a href="#"> Click aquí</a> para descargar mi CV</p>
+                    </div>
+                    <div>
+                        <button id="btn1" onclick="videoStatus('aboutMeVideo', 'btn1')">Pausa <i class="fa fa-pause"></i></button>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card1')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                    
                 </div>
             </div>
-            <div class="card2">
+            <div class="card2" id="card2">
                 <div class="frontside">
-                    <h2>Skills</h2>
+                    <h2 class="linked" onclick="flip('card2')">Skills</h2>
                 </div>
                 <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                    <video class="videoprops" autoplay muted loop id="skillsVideo">
+                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <a href="#">Click</a>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                   
                 </div>
             </div>
-            <div class="card3">
+            <div class="card3" id="card3">
                 <div class="frontside">
-                    <h2>Projects</h2>
+                    <h2 class="linked" onclick="flip('card3')">Projects</h2>
                 </div>
                 <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                    <video class="videoprops" autoplay muted loop id="skillsVideo">
+                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <a href="#">Click</a>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card3')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                   
                 </div>
             </div>
-            <div class="card4">
+            <div class="card4" id="card4">
                 <div class="frontside">
-                    <h2>Courses & Achievements</h2>
+                    <h2 class="linked" onclick="flip('card4')">Courses & Achievements</h2>
                 </div>
                 <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                    <video class="videoprops" autoplay muted loop id="skillsVideo">
+                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <a href="#">Click</a>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card4')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                   
                 </div>
             </div>
-            <div class="card5">
+            <div class="card5" id="card5">
                 <div class="frontside">
-                    <h2>Blog</h2>
+                    <h2 class="linked" onclick="flip('card5')">Blog</h2>
                 </div>
                 <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                    <video class="videoprops" autoplay muted loop id="skillsVideo">
+                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <a href="#">Click</a>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card5')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                   
                 </div>
             </div>
-            <div class="card6">
+            <div class="card6" id="card6">
                 <div class="frontside">
-                    <h2>Contact</h2>
+                    <h2 class="linked" onclick="flip('card6')">Contact</h2>
                 </div>
                 <div class="backside">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, adipisci! Voluptatem quidem voluptatum veritatis adipisci. Quam recusandae voluptates quaerat placeat, veritatis saepe natus maiores facilis deleniti quod cumque, magni iusto?</p>
+                    <video class="videoprops" autoplay muted loop id="skillsVideo">
+                        <source src="/assets/video/skills.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <a href="#">Click</a>
+                    </div>
+                    <div>
+                        <button class="flipButton" onclick="flip('card6')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                    </div>                   
                 </div>
             </div>
     </div>
@@ -76,5 +129,6 @@
             <p>asdasdasdsad</p>
         </div>
     </div>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
