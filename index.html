@@ -12,18 +12,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>hpQode</title>
 </head>
 <body>
     <header>
         <div class="nav-tab">
             <div class="logo">
-                <h1>Code<strong>Pitter</strong></h1> 
+                <h1>hp<strong>Qode</strong></h1> 
             </div>
             <div class="socialMedia">
-                <h2>socialmedia</h2>
+                <!-- Email -->
+                <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com" class="fa fa-envelope"></a>
+                <!-- LinkedIn -->
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" class="fa fa-linkedin" target="_blank"></a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" class="fa fa-twitter">
+                </a>
+                <!-- Pinterest -->
+                <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" class="fa fa-pinterest"></a>
+                <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank" class="fa fa-facebook"></a>
+                </a>
             </div>
         </div>
+        <hr style="background-color: white;">
     </header>
     <div class="row">
             <div class="card1" id="card1">
@@ -213,8 +225,8 @@
                                     <div class="slideTitle">
                                         <div class="numbertext-courses">4 / 4</div>    
                                     </div>
-                                    <video class="videoprops" loop controls>
-                                        <source src="/assets/video/achievement.mp4" type="video/mp4">
+                                    <video class="videoprops" onmouseout="pauseVideo('achievement')" id="achievement" onmouseover="playVideo('achievement')" controls>
+                                        <source src="/assets/video/achievement.mp4" type="video/mp4" >
                                     </video>                                      
                                 </div>
                             </div>
@@ -285,11 +297,11 @@
                     <h2 class="linked" onclick="flip('card5')">Blog</h2>
                 </div>
                 <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="skillsVideo">
-                        <source src="/assets/video/skills.mp4" type="video/mp4">
-                    </video>
-                    <div class="card-content">
-                        <a href="#">Click</a>
+                    <div class="videoprops" id="embedVideo">
+                        <iframe src="https://www.youtube.com/embed/bmVKaAV_7-A?autoplay=1" frameborder="0"></iframe>
+                    </div>
+                    <div class="card-content-embed">
+                        <span>EN CONSTRUCCIÓN...</span>
                     </div>
                     <div>
                         <button class="flipButton" onclick="flip('card5')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
@@ -300,13 +312,19 @@
                 <div class="frontside">
                     <h2 class="linked" onclick="flip('card6')">Contact</h2>
                 </div>
-                <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="skillsVideo">
-                        <source src="/assets/video/skills.mp4" type="video/mp4">
-                    </video>
-                    <div class="card-content">
-                        <a href="#">Click</a>
-                    </div>
+                <div class="backside contact">
+                        <br><br>
+                        <h4>CONTACTAME</h4><br>
+                        <p><a href="https://www.linkedin.com/in/hpqode/"><img src="/assets/img/linkedin-logo.png" height="45px" width="auto" alt="LinkedIn Logo"></a></p>
+                        <br>
+                        <p><a href="mailto:pitterbck@gmail.com"><img src="/assets/img/gmail-logo.png" height="45px" width="auto" alt="Gmail Logo"></a></p>
+                        <br>
+                        <p><a href="https://github.com/codePitter"><img src="/assets/img/github-logo.png" height="45px" width="auto" alt="GitHub Logo"></a></p>
+                        <br>
+                        <p><a href="https://www.instagram.com/hpqode/"><img src="/assets/img/instagram-logo.png" height="45px" width="auto" alt="Instagram Logo"></a></p>
+                        <br>
+                        <p><a href="https://twitter.com/HPQode"><img src="/assets/img/twitter-logo.png" height="45px" width="auto" alt="Twitter Logo"></a></p>
+
                     <div>
                         <button class="flipButton" onclick="flip('card6')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
                     </div>                   
@@ -315,7 +333,8 @@
     </div>
     <div class="footer">
         <div class="container">
-            <p>asdasdasdsad</p>
+            <hr>
+            <p><i>Creado y desarrollado por </i>hpQode</p>
         </div>
     </div>
     <script src="/assets/js/main.js"></script>

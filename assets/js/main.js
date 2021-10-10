@@ -22,6 +22,14 @@ function videoStatus(videoId, btnId){
     }
 }
 
+function playVideo(id) {
+    document.getElementById(id).play();
+}
+
+function pauseVideo(id) {
+  document.getElementById(id).pause();
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

@@ -18,16 +18,20 @@ JS yellow #f7df1e
 .nav-tab{
     display: flex;
     flex-wrap: wrap;
-    height: 10vh;
+    height: 9vh;
     width: 100vw;
     background-color: #222831;
     color: #f7df1e;
     padding: 4px 0;
 }
-
+hr {
+    height: 0.5vh;
+    background-color: white;
+}
 .logo, .socialMedia {
     display: inline-block;
     height: auto;
+    cursor: default;
 }
 .logo {
     font-family: 'Zen Dots', cursive;
@@ -46,6 +50,7 @@ JS yellow #f7df1e
 
 h1 {
     font-family: 'Oswald', sans-serif;
+    font-size: 50px;
 }
 
 h2{
@@ -53,31 +58,51 @@ h2{
     color: white;
     text-shadow: 1px 1px 5px blue;
 }
-/*Body*/
 
-body {
-    background-color: black;
-}
-
-/*-----------Video--------*/
-/*-----------636 x 381----*/
-
-.videoprops {
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    min-width: 10%;
-    min-height: 100%;
-}
-
-video{
-    position:absolute;
-    height:100%;
-    width:100%;
-    top:0px;
-    left:0px;
-}
+/*--------------Social media----------*/
+.fa {
+    padding: 10px 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-envelope {
+    background: #45bbff;
+    color: white;
+  }
+  
+/*-----------------------------------------------------------*/
 
 #btn1, #btn2{
   position: fixed;
@@ -121,6 +146,31 @@ video{
 .card-content a:hover{
     color: #f7df1e;
 }
+
+.card-content-embed{
+    margin: 0 5px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 75px;
+    color: #f1f1f1;
+    width: 45%;
+    height: auto;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.card-content-embed p{
+    font-weight: bold;
+}
+
+.card-content-embed span{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+
 
 #aboutMeDescription{
     min-width: 250px;
@@ -261,7 +311,20 @@ h3{
     color:white;
     font-family: 'ubuntu', sans-serif;
 }
-
+.backside, .contact {
+    padding: 0;
+}
+.backside, .contact a{
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+h4{
+    letter-spacing: 10px;
+    font-weight: lighter;
+    font-size: 25px;
+}
 /*----------Skills bar----------------------------*/
 
 .skills {
@@ -447,10 +510,20 @@ button{
     animation-duration: 1.5s;
 }
 
-.dots{
-      text-align: center;
-      margin-top: 10px;
+/*--------------------footer----------------*/
+.footer .container{
+    height: 100%;
 }
+.footer .container p{
+    position: relative;
+    color: white;
+    text-align: end;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-family: 'ubuntu', sans-serif;
+    cursor: default;
+}
+
 
 @-webkit-keyframes fade {
     from {
@@ -495,19 +568,69 @@ button{
     } */
     .logo {
         width: 100%;
+        display: block;
     }
     .socialMedia {
         width: 100%;
+        text-align: center;
+    }
+    .nav-tab {
+        flex-direction: column;
+        height: 20vh;
+    }
+    h1{
+        text-align: center;
+    }
+    .nav-tab .socialMedia {
+        width: 100%;
+        order: 2;
+    }
+    .nav-tab .logo {
+        width: 100%;
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        display: block;
+        height: 50vh;
+        text-align: center;
+        flex: 100%;
+        max-width: 50%;
+        padding: 0;
+        margin: 0;
+        background-color:rgba(0, 0, 0, 0.234);
+        color: #EEEEEE;
+    }
+    .flipButton{
+        height: 11%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px)  {
+    /* .flipButton{
+        height: 17.5%;
+    } */
+    .logo {
+        width: 50%;
+        display: block;
+    }
+    .socialMedia {
+        width: 50%;
+        display: block;
     }
     .nav-tab {
         flex-direction: column;
     }
     .nav-tab .socialMedia {
-        width: 100%;
-        order: 1;
+        width: 50%;
+        order: 2;
     }
     .nav-tab .logo {
-        width: 100%;
-        order: 2;
+        width: 50%;
+        order: 1;
     }
 }
