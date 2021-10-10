@@ -21,7 +21,11 @@
                 <h1>hp<strong>Qode</strong></h1> 
             </div>
             <div class="socialMedia">
-                <!-- Email -->
+                <div class="share-text">
+                    <h5>COMPARTIR EN</h5>
+                </div>
+                <div class="share-icons">
+                    <!-- Email -->
                 <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com" class="fa fa-envelope"></a>
                 <!-- LinkedIn -->
                 <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" class="fa fa-linkedin" target="_blank"></a>
@@ -32,309 +36,312 @@
                 <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" class="fa fa-pinterest"></a>
                 <!-- Facebook -->
                 <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank" class="fa fa-facebook"></a>
-                </a>
+                </div>                
             </div>
         </div>
         <hr style="background-color: white;">
     </header>
     <div class="row">
-            <div class="card1" id="card1">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card1')">About me</h2>
-                </div>
-                <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="aboutMeVideo" onclick="videoStatus('aboutMeVideo', 'btn1')">
-                        <source src="/assets/video/My Video7.mp4" type="video/mp4">
-                    </video>
-                    <div class="card-content" id="aboutMeDescription">
-                        <p>Mi nombre es Pedro. Soy Desarrollador web Full Stack en constante capacitación en difernetes lenguajes de programación con experincia como administrativo.</p><br>
-                        <p>Click<a href="/assets/files/CvHPQuiroga2021v2.pdf"> aquí</a> para descargar mi CV</p>
-                    </div>
-                    <div>
-                        <button id="btn1">Pausa <i class="fa fa-pause"></i></button>
-                    </div>
-                    <div>
-                        <button class="flipButton" onclick="flip('card1')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                    
-                </div>
+        <div class="card1" id="card1">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card1')">About me</h2>
             </div>
-            <div class="card2" id="card2">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card2')">Skills</h2>
+            <div class="backside">
+                <video class="videoprops" autoplay muted loop id="aboutMeVideo" onclick="videoStatus('aboutMeVideo', 'btn1')">
+                    <source src="/assets/video/My Video7.mp4" type="video/mp4">
+                </video>
+                <div class="card-content" id="aboutMeDescription">
+                    <p>Mi nombre es Pedro. Soy Desarrollador web Full Stack en constante capacitación en difernetes lenguajes de programación con experincia como administrativo.</p><br>
+                    <p>Click<a href="/assets/files/CvHPQuiroga2021v2.pdf"> aquí</a> para descargar mi CV</p>
                 </div>
-                <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="skillsVideo" onclick="videoStatus('skillsVideo', 'btn2')">
-                        <source src="/assets/video/skills2.mp4" type="video/mp4">
-                    </video>
-                    <div class="card-content">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div>
+                    <button id="btn1">Pausa <i class="fa fa-pause"></i></button>
+                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card1')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                    
+            </div>
+        </div>
+        <div class="card2" id="card2">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card2')">Skills</h2>
+            </div>
+            <div class="backside">
+                <video class="videoprops" autoplay muted loop id="skillsVideo" onclick="videoStatus('skillsVideo', 'btn2')">
+                    <source src="/assets/video/skills2.mp4" type="video/mp4">
+                </video>
+                <div class="card-content">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <div class="slideTitle">
-                                    <h3>Programación</h3>
-                                    <div class="numbertext">1 / 3</div>    
-                                </div>
-                                <span>HTML</span>
-                                <div class="container">
-                                    <div class="skills html">90%</div>
-                                </div>
-                                <span>CSS</span>
-                                <div class="container">
-                                    <div class="skills css">80%</div>
-                                </div>
-                                <span>JavaScript</span>
-                                <div class="container">
-                                    <div class="skills js">55%</div>
-                                </div>
-                                <span>NodeJS</span>
-                                <div class="container">
-                                    <div class="skills php">40%</div>
-                                </div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="slideTitle">
+                                <h3>Programación</h3>
+                                <div class="numbertext">1 / 3</div>    
                             </div>
-                            <!------------------------------------------->  
-                            <div class="mySlides fade">
-                                <div class="slideTitle">
-                                    <h3>Diseño</h3>
-                                    <div class="numbertext">2 / 3</div>    
-                                </div>
-                                <span>Bootstrap 5</span>
-                                <div class="container">
-                                    <div class="skills bootstrap">75%</div>
-                                </div>
-                                <span>Photoshop</span>
-                                <div class="container">
-                                    <div class="skills photoshop">90%</div>
-                                </div>
-                                <span>Corel Draw</span>
-                                <div class="container">
-                                    <div class="skills corelDraw">50%</div>
-                                </div>
-                                <span>Filmora</span>
-                                <div class="container">
-                                    <div class="skills wonderShareFilmora">80%</div>
-                                </div>
+                            <span>HTML</span>
+                            <div class="container">
+                                <div class="skills html">90%</div>
                             </div>
-                            
-                            <div class="mySlides fade">
-                                <div class="slideTitle">
-                                    <h3>Administración</h3>
-                                    <div class="numbertext">3 / 3</div>    
-                                </div>
-                                <span>Excel</span>
-                                <div class="container">
-                                    <div class="skills excel">100%</div>
-                                </div>
-                                <span>Word</span>
-                                <div class="container">
-                                    <div class="skills word">95%</div>
-                                </div>
-                                <span>Power Point</span>
-                                <div class="container">
-                                    <div class="skills powerPoint">95%</div>
-                                </div>
-                                <span>Citrix Workspace</span>
-                                <div class="container">
-                                    <div class="skills citrix">75%</div>
-                                </div>
+                            <span>CSS</span>
+                            <div class="container">
+                                <div class="skills css">80%</div>
                             </div>
-                            <!------------------------------------------->
-                        </div>                        
-                        <!------------------------------------------->
+                            <span>JavaScript</span>
+                            <div class="container">
+                                <div class="skills js">55%</div>
+                            </div>
+                            <span>NodeJS</span>
+                            <div class="container">
+                                <div class="skills php">40%</div>
+                            </div>
+                        </div>
+                        <!------------------------------------------->  
+                        <div class="mySlides fade">
+                            <div class="slideTitle">
+                                <h3>Diseño</h3>
+                                <div class="numbertext">2 / 3</div>    
+                            </div>
+                            <span>Bootstrap 5</span>
+                            <div class="container">
+                                <div class="skills bootstrap">75%</div>
+                            </div>
+                            <span>Photoshop</span>
+                            <div class="container">
+                                <div class="skills photoshop">90%</div>
+                            </div>
+                            <span>Corel Draw</span>
+                            <div class="container">
+                                <div class="skills corelDraw">50%</div>
+                            </div>
+                            <span>Filmora</span>
+                            <div class="container">
+                                <div class="skills wonderShareFilmora">80%</div>
+                            </div>
+                        </div>
                         
-                    </div>
-                    <div>
-                        <button id="btn2">Pausa <i class="fa fa-pause"></i></button>
-                    </div>
-                    <div>
-                        <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                   
-                </div>
-            </div>
-            <div class="card3" id="card3">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card3')">Projects</h2>
-                </div>
-                <div class="backside">
-                    <video class="videoprops" autoplay muted loop id="skillsVideo">
-                        <source src="/assets/video/skills.mp4" type="video/mp4">
-                    </video>
-                    <div class="card-content">
-                        <a href="#">Click</a>
-                    </div>
-                    <div>
-                        <button class="flipButton" onclick="flip('card3')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                   
-                </div>
-            </div>
-            <div class="card4" id="card4">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card4')">Courses & Achievements</h2>
-                </div>
-                <div class="backside">
-                    <div class="card-content" id="courses-slides">
-                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-                        <div class="slideshow-container" id="courses-container">
-                            <div class="mySlides2 fade">
-                                <div>
-                                    <div class="slideTitle">
-                                        <div class="numbertext-courses">1 / 4</div>    
-                                    </div>
-                                    <span><img src="/assets/img/googleActivate.png" height="35px" alt="Google Activate Logo"></span><br><br>
-                                    <p><a href="">Curso de Introducción al desarrollo Web HTML y CSS Parte 1</a></p><br>
-                                    <p><a href="">Curso de Introducción al desarrollo Web HTML y CSS Parte 2</a></p><br>
-                                    <p><a href="">Curso de Desarrollo de Apps Móviles</a></p><br><br>
-                                    <span><img src="/assets/img/platzi-logo.png " height="35px" alt="Platzi Logo"></span><br><br>
-                                    <p><a href="">Curso definitivo de HTML y CSS</a></p><br>
-                                    <p><a href="">Curso de Programación Orientada a Objetos en JavaScript</a></p><br>
-                                </div>
+                        <div class="mySlides fade">
+                            <div class="slideTitle">
+                                <h3>Administración</h3>
+                                <div class="numbertext">3 / 3</div>    
                             </div>
-                            <div class="mySlides2 fade">
-                                <div>
-                                    <div class="slideTitle">
-                                        <div class="numbertext-courses">2 / 4</div>    
-                                    </div>
-                                    <span><img src="/assets/img/platzi-logo.png " height="35px" alt="Platzi Logo"></span><br><br>
-                                    <p><a href="">Curso de Closures y Scopes en JavaScript</a></p><br>
-                                    <p><a href="">Curso básico de JavaScript</a></p><br>
-                                    <p><a href="">Curso práctico de JavaScript</a></p><br>
-                                    <p><a href="">Curso de programación Orientada a Objetos</a></p><br>
-                                    <p><a href="">Curso Profesional de Git Y Github</a></p><br>
-                                    <p><a href="">Curso de Creación de NFTs</a></p><br>
-                                    <p><a href="">Curso de Marca Personal</a></p><br>
-                                    <p><a href="">Strategies to Learn English Online</a></p><br>
-                                </div>
+                            <span>Excel</span>
+                            <div class="container">
+                                <div class="skills excel">100%</div>
                             </div>
-                            <div class="mySlides2 fade">
-                                <div>
-                                    <div class="slideTitle">
-                                        <div class="numbertext-courses">3 / 4</div>    
-                                    </div>
-                                    <span><img src="/assets/img/udemy-logo.png" height="35px" alt="Udemy Logo"></span><br><br>
-                                    <p><a href="">Certification HTML5 & CSS3 & JAVASCRIPT</a></p><br><br>
-                                    <span><img src="/assets/img/unr-logo.png" height="35px" alt="UNR Logo"></span><br><br>
-                                    <p><a href="">Curso Introducción de Idioma Chino Mandarín 1</a></p><br><br>
-                                    <span><img src="/assets/img/accenture-logo.png" height="35px" alt="Accenture Logo"></span><br><br>
-                                    <p><a href="">Curso Habilidades Blandas</a></p><br>                                    
-                                </div>
+                            <span>Word</span>
+                            <div class="container">
+                                <div class="skills word">95%</div>
                             </div>
-                            <div class="mySlides2 fade">
-                                <div>
-                                    <div class="slideTitle">
-                                        <div class="numbertext-courses">4 / 4</div>    
-                                    </div>
-                                    <video class="videoprops" onmouseout="pauseVideo('achievement')" id="achievement" onmouseover="playVideo('achievement')" controls>
-                                        <source src="/assets/video/achievement.mp4" type="video/mp4" >
-                                    </video>                                      
-                                </div>
+                            <span>Power Point</span>
+                            <div class="container">
+                                <div class="skills powerPoint">95%</div>
                             </div>
-                            <!------------------------------------------->  
-                            <!-- <div class="mySlides2 fade">
-                                <div class="slideTitle">
-                                    <h3>Diseño</h3>
-                                    <div class="numbertext">2 / 3</div>    
-                                </div>
-                                <span>Bootstrap 5</span>
-                                <div class="container">
-                                    <div class="skills bootstrap">75%</div>
-                                </div>
-                                <span>Photoshop</span>
-                                <div class="container">
-                                    <div class="skills photoshop">90%</div>
-                                </div>
-                                <span>Corel Draw</span>
-                                <div class="container">
-                                    <div class="skills corelDraw">50%</div>
-                                </div>
-                                <span>Filmora</span>
-                                <div class="container">
-                                    <div class="skills wonderShareFilmora">80%</div>
-                                </div>
+                            <span>Citrix Workspace</span>
+                            <div class="container">
+                                <div class="skills citrix">75%</div>
                             </div>
-                            
-                            <div class="mySlides2 fade">
-                                <div class="slideTitle">
-                                    <h3>Administración</h3>
-                                    <div class="numbertext">3 / 3</div>    
-                                </div>
-                                <span>Excel</span>
-                                <div class="container">
-                                    <div class="skills excel">100%</div>
-                                </div>
-                                <span>Word</span>
-                                <div class="container">
-                                    <div class="skills word">95%</div>
-                                </div>
-                                <span>Power Point</span>
-                                <div class="container">
-                                    <div class="skills powerPoint">95%</div>
-                                </div>
-                                <span>Citrix Workspace</span>
-                                <div class="container">
-                                    <div class="skills citrix">75%</div>
-                                </div>
-                            </div> -->
-                            <!------------------------------------------->
-                        </div>                        
+                        </div>
                         <!------------------------------------------->
+                    </div>                        
+                    <!------------------------------------------->
+                    
+                </div>
+                <div>
+                    <button id="btn2">Pausa <i class="fa fa-pause"></i></button>
+                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                   
+            </div>
+        </div>
+        <div class="card3" id="card3">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card3')">Projects</h2>
+            </div>
+            <div class="backside">
+                <video class="videoprops" autoplay muted loop id="skillsVideo">
+                    <source src="/assets/video/skills.mp4" type="video/mp4">
+                </video>
+                <div class="card-content">
+                    <a href="#">Click</a>
+                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card3')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                   
+            </div>
+        </div>
+        <div class="card4" id="card4">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card4')">Courses & Achievements</h2>
+            </div>
+            <div class="backside">
+                <div class="card-content" id="courses-slides">
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    <div class="slideshow-container" id="courses-container">
+                        <div class="mySlides2 fade">
+                            <div>
+                                <div class="slideTitle">
+                                    <div class="numbertext-courses">1 / 4</div>    
+                                </div>
+                                <span><img src="/assets/img/googleActivate.png" height="35px" alt="Google Activate Logo"></span><br><br>
+                                <p><a href="">Curso de Introducción al desarrollo Web HTML y CSS Parte 1</a></p><br>
+                                <p><a href="">Curso de Introducción al desarrollo Web HTML y CSS Parte 2</a></p><br>
+                                <p><a href="">Curso de Desarrollo de Apps Móviles</a></p><br><br>
+                                <span><img src="/assets/img/platzi-logo.png " height="35px" alt="Platzi Logo"></span><br><br>
+                                <p><a href="">Curso definitivo de HTML y CSS</a></p><br>
+                                <p><a href="">Curso de Programación Orientada a Objetos en JavaScript</a></p><br>
+                            </div>
+                        </div>
+                        <div class="mySlides2 fade">
+                            <div>
+                                <div class="slideTitle">
+                                    <div class="numbertext-courses">2 / 4</div>    
+                                </div>
+                                <span><img src="/assets/img/platzi-logo.png " height="35px" alt="Platzi Logo"></span><br><br>
+                                <p><a href="">Curso de Closures y Scopes en JavaScript</a></p><br>
+                                <p><a href="">Curso básico de JavaScript</a></p><br>
+                                <p><a href="">Curso práctico de JavaScript</a></p><br>
+                                <p><a href="">Curso de programación Orientada a Objetos</a></p><br>
+                                <p><a href="">Curso Profesional de Git Y Github</a></p><br>
+                                <p><a href="">Curso de Creación de NFTs</a></p><br>
+                                <p><a href="">Curso de Marca Personal</a></p><br>
+                                <p><a href="">Strategies to Learn English Online</a></p><br>
+                            </div>
+                        </div>
+                        <div class="mySlides2 fade">
+                            <div>
+                                <div class="slideTitle">
+                                    <div class="numbertext-courses">3 / 4</div>    
+                                </div>
+                                <span><img src="/assets/img/udemy-logo.png" height="35px" alt="Udemy Logo"></span><br><br>
+                                <p><a href="">Certification HTML5 & CSS3 & JAVASCRIPT</a></p><br><br>
+                                <span><img src="/assets/img/unr-logo.png" height="35px" alt="UNR Logo"></span><br><br>
+                                <p><a href="">Curso Introducción de Idioma Chino Mandarín 1</a></p><br><br>
+                                <span><img src="/assets/img/accenture-logo.png" height="35px" alt="Accenture Logo"></span><br><br>
+                                <p><a href="">Curso Habilidades Blandas</a></p><br>                                    
+                            </div>
+                        </div>
+                        <div class="mySlides2 fade">
+                            <div>
+                                <div class="slideTitle">
+                                    <div class="numbertext-courses">4 / 4</div>    
+                                </div>
+                                <video class="videoprops" onmouseout="pauseVideo('achievement')" id="achievement" onmouseover="playVideo('achievement')" controls>
+                                    <source src="/assets/video/achievement.mp4" type="video/mp4" >
+                                </video>                                      
+                            </div>
+                        </div>
+                        <!------------------------------------------->  
+                        <!-- <div class="mySlides2 fade">
+                            <div class="slideTitle">
+                                <h3>Diseño</h3>
+                                <div class="numbertext">2 / 3</div>    
+                            </div>
+                            <span>Bootstrap 5</span>
+                            <div class="container">
+                                <div class="skills bootstrap">75%</div>
+                            </div>
+                            <span>Photoshop</span>
+                            <div class="container">
+                                <div class="skills photoshop">90%</div>
+                            </div>
+                            <span>Corel Draw</span>
+                            <div class="container">
+                                <div class="skills corelDraw">50%</div>
+                            </div>
+                            <span>Filmora</span>
+                            <div class="container">
+                                <div class="skills wonderShareFilmora">80%</div>
+                            </div>
+                        </div>
                         
-                    </div>
-                    <!-- <div>
-                        <button id="btn3">Pausa <i class="fa fa-pause"></i></button>
-                    </div> -->
-                    <div>
-                        <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>
-                    <div>
-                        <button class="flipButton" onclick="flip('card4')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                   
+                        <div class="mySlides2 fade">
+                            <div class="slideTitle">
+                                <h3>Administración</h3>
+                                <div class="numbertext">3 / 3</div>    
+                            </div>
+                            <span>Excel</span>
+                            <div class="container">
+                                <div class="skills excel">100%</div>
+                            </div>
+                            <span>Word</span>
+                            <div class="container">
+                                <div class="skills word">95%</div>
+                            </div>
+                            <span>Power Point</span>
+                            <div class="container">
+                                <div class="skills powerPoint">95%</div>
+                            </div>
+                            <span>Citrix Workspace</span>
+                            <div class="container">
+                                <div class="skills citrix">75%</div>
+                            </div>
+                        </div> -->
+                        <!------------------------------------------->
+                    </div>                        
+                    <!------------------------------------------->
+                    
                 </div>
+                <!-- <div>
+                    <button id="btn3">Pausa <i class="fa fa-pause"></i></button>
+                </div> -->
+                <div>
+                    <button class="flipButton" onclick="flip('card2')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card4')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                   
             </div>
-            <div class="card5" id="card5">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card5')">Blog</h2>
-                </div>
-                <div class="backside">
-                    <div class="videoprops" id="embedVideo">
-                        <iframe src="https://www.youtube.com/embed/bmVKaAV_7-A?autoplay=1" frameborder="0"></iframe>
-                    </div>
-                    <div class="card-content-embed">
-                        <span>EN CONSTRUCCIÓN...</span>
-                    </div>
-                    <div>
-                        <button class="flipButton" onclick="flip('card5')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                   
-                </div>
+        </div>
+        <div class="card5" id="card5">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card5')">Blog</h2>
             </div>
-            <div class="card6" id="card6">
-                <div class="frontside">
-                    <h2 class="linked" onclick="flip('card6')">Contact</h2>
+            <div class="backside">
+                <div class="videoprops" id="embedVideo">
+                    <iframe src="https://www.youtube.com/embed/bmVKaAV_7-A?autoplay=1" frameborder="0"></iframe>
                 </div>
-                <div class="backside contact">
-                        <br><br>
-                        <h4>CONTACTAME</h4><br>
-                        <p><a href="https://www.linkedin.com/in/hpqode/"><img src="/assets/img/linkedin-logo.png" height="45px" width="auto" alt="LinkedIn Logo"></a></p>
-                        <br>
-                        <p><a href="mailto:pitterbck@gmail.com"><img src="/assets/img/gmail-logo.png" height="45px" width="auto" alt="Gmail Logo"></a></p>
-                        <br>
-                        <p><a href="https://github.com/codePitter"><img src="/assets/img/github-logo.png" height="45px" width="auto" alt="GitHub Logo"></a></p>
-                        <br>
-                        <p><a href="https://www.instagram.com/hpqode/"><img src="/assets/img/instagram-logo.png" height="45px" width="auto" alt="Instagram Logo"></a></p>
-                        <br>
-                        <p><a href="https://twitter.com/HPQode"><img src="/assets/img/twitter-logo.png" height="45px" width="auto" alt="Twitter Logo"></a></p>
+                <div class="card-content-embed">
+                    <span>EN CONSTRUCCIÓN...</span>
+                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card5')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                   
+            </div>
+        </div>
+        <div class="card6" id="card6">
+            <div class="frontside">
+                <h2 class="linked" onclick="flip('card6')">Contact</h2>
+            </div>
+            <div class="backside contact">
+                    <br><br>
+                    <h4>CONTACTAME</h4><br>
+                    <p><a href="https://www.linkedin.com/in/hpqode/"><img src="/assets/img/linkedin-logo.png" height="45px" width="auto" alt="LinkedIn Logo"></a></p>
+                    <br>
+                    <p><a href="mailto:pitterbck@gmail.com"><img src="/assets/img/gmail-logo.png" height="45px" width="auto" alt="Gmail Logo"></a></p>
+                    <br>
+                    <p><a href="https://github.com/codePitter"><img src="/assets/img/github-logo.png" height="45px" width="auto" alt="GitHub Logo"></a></p>
+                    <br>
+                    <p><a href="https://www.instagram.com/hpqode/"><img src="/assets/img/instagram-logo.png" height="45px" width="auto" alt="Instagram Logo"></a></p>
+                    <br>
+                    <p><a href="https://twitter.com/HPQode"><img src="/assets/img/twitter-logo.png" height="45px" width="auto" alt="Twitter Logo"></a></p>
 
-                    <div>
-                        <button class="flipButton" onclick="flip('card6')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
-                    </div>                   
-                </div>
+                <div>
+                    <button class="flipButton" onclick="flip('card6')"><img src="/assets/img/flipbtn.png" width="50px" height="47.5px" alt=""></button>
+                </div>                   
             </div>
+        </div>
+
     </div>
-    <div class="footer">
-        <div class="container">
-            <hr>
-            <p><i>Creado y desarrollado por </i>hpQode</p>
+    <div class="row-footer">
+        <div class="footer">
+            <div class="container">
+                <hr>
+                <p><i>Creado y desarrollado por </i>hpQode</p>
+            </div>
         </div>
     </div>
     <script src="/assets/js/main.js"></script>
