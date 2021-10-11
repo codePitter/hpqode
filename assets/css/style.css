@@ -14,7 +14,11 @@ JS yellow #f7df1e
     box-sizing: border-box;
 }
 html{
-    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
 }
 /*Header*/
 header{
@@ -481,7 +485,7 @@ button{
 
 /* Footer*/
 .row-footer{
-    height: 6vh;
+    height: 7vh;
 }
 .footer{
     background-color: #000000;
